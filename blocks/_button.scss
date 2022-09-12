@@ -1,0 +1,21 @@
+.button {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    width: 163px;
+    height: 55px;
+    color: $highlightingText;
+    background-color: $selectionAdditionalСolor;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    line-height: 31px;
+    will-change: border;
+}
+
+.button:hover {
+    border: 2px solid $highlightingText;
+    border-radius: 10px;
+}

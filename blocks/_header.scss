@@ -1,0 +1,187 @@
+.header {
+    box-sizing: border-box;
+    padding: 40px 50px 50px 50px;
+    width: 100%;
+    background-color: $mainColor;
+
+    &__circle {
+        width: 565px;
+        height: 565px;
+        background-color: $otherAdditionalColor;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 1;
+        left: 1045px;
+        top: -155px;
+
+        @include tablets {
+          display: none;
+        }
+    }
+
+    &__print {
+        position: absolute;
+        z-index: 2;
+        width: 169px;
+        height: 169px;
+        top: 50px;
+        right: 50px;
+
+        animation-name: rotation;
+        animation-duration: 14s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+        @keyframes rotation {
+          0% {
+              transform:rotate(0deg);
+          }
+          100% {
+              transform:rotate(-360deg);
+          }
+      }
+
+      @include laptop {
+        width: 128px;
+        height: 128px;
+        top: 40px;
+      }
+      @include tablets {
+        z-index: 2;
+      }
+
+      @include phones {
+        width: 94px;
+        height: 94px;
+      }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 60px;
+        margin: 40px 0 50px;
+
+        @include desktop {
+          gap: 70px;
+      }
+
+        @include tablets {
+            align-items: center;
+            margin: 0 auto;
+            flex-direction: column;
+            gap: 50px;
+            margin-top: 126px;
+        }
+
+        @include phones {
+          margin-top: 50px;
+        }
+    }
+
+    &__image {
+        position: relative;
+        display: block;
+        z-index: 1;
+        background: url('../vendor/images/limonades.png') center / contain no-repeat;
+        width: 100%;
+        max-width: 783px;
+        max-height: 600px;
+        aspect-ratio: 261 / 200;
+
+        @include tablets {
+          aspect-ratio: 334 / 257;
+      }
+    }
+
+    &__tasteIcon {
+        width: 149px;
+        height: 146px;
+        position: absolute;
+        z-index: 2;
+        right: -54px;
+        bottom: -37px;
+
+
+        @include laptop {
+          width: 130px;
+          height: 125px;
+        }
+
+        @include tablets {
+          right: 15px;
+          bottom: 15px;
+        }
+
+        @include phones {
+          width: 84px;
+          height: 81px;
+          bottom: -33px;
+        }
+    }
+
+    &__description-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        
+        @include tablets {
+          align-self: flex-start;
+          margin: 0 auto;
+          width: 780px;
+        }
+
+        @include fixscale {
+          width: 100%;
+        }
+
+        @include phones {
+          width: 100%;
+        }
+        
+    }
+
+    &__title {
+        position: relative;
+        z-index: 3;
+        margin: 0 0 171px;
+        width: 100%;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        color: #FFF;
+
+
+        @include desktop {
+          font-size: 2.8vw;
+        }
+        
+        @include tablets {
+          margin: 0 0 30px;
+          max-width: 375px;
+          font-weight: 600;
+          font-size: 3.7vw;
+          line-height: 38px;
+        }
+
+        @include fixfontsz {
+          max-width: 280px;
+          font-size: 4vw;
+        }
+
+        @include fixfontwth {
+          max-width: 200px;
+        }
+
+        @include fixmobilefontsz {
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 24px;
+        }
+    }
+    
+  @include phones {
+    padding: 20px;
+  }
+}

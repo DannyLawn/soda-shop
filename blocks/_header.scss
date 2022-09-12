@@ -60,12 +60,8 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 60px;
+        gap: 70px;
         margin: 40px 0 50px;
-
-        @include desktop {
-          gap: 70px;
-      }
 
         @include tablets {
             align-items: center;

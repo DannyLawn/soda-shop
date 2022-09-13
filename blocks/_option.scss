@@ -1,0 +1,230 @@
+.option {
+  background-color: inherit;
+
+    &__title {
+      pointer-events: none;
+      margin: 0;
+      padding: 120px 0;
+      font-size: 60px;
+      line-height: 60px;
+      letter-spacing: 0.5px;
+      color: $highlightingText;
+      text-align: center;
+
+      @include phones {
+        padding: 50px 0;
+        font-size: 6.25vw;
+        line-height: 24px;
+      }
+    }
+
+    &__item {
+      margin: 0 50px;
+      background-color: $mainColor;
+
+      @include phones {
+        margin:  0 20px;
+      }
+    }
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      position: relative;
+      padding: 90px 100px;
+
+      @include tablets {
+        padding: 60px;
+      }
+
+      @include phones {
+        padding: 20px;
+      }
+    }
+
+    &__container_type-structure {
+
+      @include flextestescontainer {
+        padding-bottom: 100px;
+      }
+
+      @include phones {
+        padding-bottom: 60px;
+      }
+    }
+
+    &__text-container {
+      @include flextestescontainer {
+        margin: 0 15.63%;
+        width: 100%;
+        max-width: 682px;
+      }
+
+      @include tablets {
+        margin: 0;
+      }
+
+    }
+
+    &__description-title {
+      pointer-events: none;
+      margin: 0;
+      max-width: 457px;
+      font-weight: 600;
+      font-size: 52px;
+      line-height: 48px;
+      color: #FFF;
+
+
+      @include phones {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+      }
+
+      @include fixfontsz {
+        min-width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    &__description {
+      pointer-events: none;
+      margin: 30px 0 0;
+      max-width: 386px;
+      font-size: 18px;
+      line-height: 31px;
+      letter-spacing: 0.3px;
+      color: #FFF;
+      opacity: 0.8;
+
+      @include phones {
+        margin-top: 14px;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.3px;
+        opacity: 1;
+        max-width: 240px;
+      }
+    }
+
+    &__image {
+      object-fit: contain;
+
+      @include flextestescontainer {
+        margin: 60px auto 0;
+        width: 70%;
+      }
+
+      @include tablets {
+        margin-top: 50px;
+        width: 100%;
+      }
+    }
+
+    &__item_type-structure {
+      background-color: $additionalColor;
+      position: relative;
+    }
+
+    &__ingredients {
+      margin: 0;
+      padding: 0;
+
+      @include flextestescontainer {
+        margin: 100px 15.7% 0;
+      }
+
+      @include tablets {
+        margin: 100px 0 0;
+      }
+
+      @include fixmobilefontsz {
+        margin-top: 60px;
+        width: 100%;
+      }
+    }
+
+    &__ingredient {
+      width: 255px;
+      margin-bottom: 30px;
+      list-style-type: none;
+      pointer-events: none;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 50px;
+      color: #FFF;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+      @include fixmobilefontsz {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 22px;
+        width: 100%;
+      }
+    }
+
+    &__ingredient:last-child {
+      margin-bottom: 0;
+    }
+
+    &__circle {
+      box-sizing: border-box;
+      position: relative;
+      margin-right: 30px;
+      width: 185px;
+      height: 185px;
+      border: 3px solid #016450;
+      background-color: #E1FD2C;
+      border-radius: 50%;
+
+      @include flextestescontainer {
+        order: 3;
+      }
+
+      @include fixfontsz {
+        margin-right: 0;
+      }
+
+      @include fixmobilefontsz {
+        display: none;
+      }
+    }
+
+    &__circle::after {
+      content: '';
+      position: absolute;
+      right: -57px;
+      bottom: -157px;
+      box-sizing: border-box;
+      width: 138px;
+      height: 138px;
+      border: 3px solid $highlightingText;
+      background-color: $selectionAdditionalСolor;
+      border-radius: 50%;
+
+      @include tablets {
+        right: 0px;
+      }
+    }
+
+    &__button-container {
+
+      @include flextestescontainer {
+        margin: 0 auto;
+        max-width: 1140px;
+        height: 115px;
+        padding: 0 100px;
+      }
+
+      @include tablets {
+        padding: 0 60px;
+      }
+
+      @include phones {
+        padding: 0 20px;
+        height: 75px;
+      }
+    }
+}

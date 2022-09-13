@@ -13,9 +13,49 @@
     letter-spacing: 0.3px;
     line-height: 31px;
     will-change: border;
+
+    animation-name: borderline;
+    animation-fill-mode: both;
+
+    @keyframes borderline {
+      from {
+        border: 2px solid $highlightingText;
+        border-radius: 10px;
+      }
+      to {
+        border: 0;
+        border-radius: 0;
+      }
+    }
+
+    &_type-test {
+      position: absolute;
+      left: 100px;
+      bottom: 90px;
+
+      @include flextestescontainer {
+        position: static;
+        margin-left: 15.7%;
+
+      }
+
+      @include tablets {
+        margin-left: 0;
+      }
+    }
 }
 
 .button:hover {
-    border: 2px solid $highlightingText;
-    border-radius: 10px;
+    animation-name: borderlinehover;
+    animation-fill-mode: both;
+
+    @keyframes borderlinehover {
+      from {
+        border: 0px;
+      }
+      to {
+        border: 2px solid $highlightingText;
+        border-radius: 10px;
+      }
+    }
 }

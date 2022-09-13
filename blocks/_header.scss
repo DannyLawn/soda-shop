@@ -28,7 +28,7 @@
         right: 50px;
 
         animation-name: rotation;
-        animation-duration: 14s;
+        animation-duration: 10s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
 
@@ -78,7 +78,6 @@
 
     &__image {
         position: relative;
-        display: block;
         z-index: 1;
         background: url('../vendor/images/limonades.png') center / contain no-repeat;
         width: 100%;
@@ -141,6 +140,7 @@
     &__title {
         position: relative;
         z-index: 3;
+        pointer-events: none;
         margin: 0 0 171px;
         width: 100%;
         font-weight: 600;

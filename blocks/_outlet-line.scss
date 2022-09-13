@@ -11,6 +11,7 @@
 
     &__text {
         margin: 0;
+        pointer-events: none;
         font-weight: bold;
         font-size: 30px;
         line-height: 36px;
@@ -19,10 +20,20 @@
         text-overflow: clip;
         color: #016450;
 
-        @include phones {
+        animation: 9s linear infinite alternate movingToTheSides;
+
+        @keyframes movingToTheSides {
+          0% {
+              transform: translateX(0);
+          }
+          100% {
+              transform:translateX(-600px);
+          }
+        }
+    @include phones {
           font-weight: 700;
           font-size: 20px;
           line-height: 24px;
-        }
     }
+  }
 }

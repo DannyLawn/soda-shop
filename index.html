@@ -10,6 +10,7 @@
 </head>
 <body class="body">
     <div class="page">
+      <!--
         <header class="header">
             <h2 class="logo">soda</h2>
             <img class="header__print" src="./vendor/images/madeOnEarth.png" alt="Печать: сделано на планете земля.">
@@ -24,12 +25,15 @@
                 </div>
             </div>
         </header>
+        
         <div class="outlet-line">
             <p class= "outlet-line__text">— Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh —
             </p>
         </div>
+      -->
         
         <main class="content">
+          <!--
           <section class="option">
             <h2 class="option__title">Как это работает?</h2>
             <div class="option__item">
@@ -79,27 +83,31 @@
               </div>
             </div>
           </section>
-          <!-- <section class="samples">
+          -->
+          <section class="samples">
             <div class="samples__description-container">
               <h2 class="samples__description-title">Семплы</h2>
-              <p class="samples__description">Хотите получить семплы каждого вкуса, чтобы понять что нравится вам? заполните форму!</p>
+              <p class="samples__description">Хотите получить семплы каждого вкуса, чтобы&nbsp;понять что нравится вам? Заполните форму!</p>
             </div>
-            <form class="samples__form">
-              <h2 class="samples__form-title">Семплы</h2>
-              <div class="samples__input-item">
-                <label class="samples__input-capture" for="name">Имя *</label>
-                <input class="samples__input" type="text" name="name">
+            <form class="form">
+              <h2 class="form__title">Семплы</h2>
+              <div class="form__input-container">
+                <div class="form__input-item">
+                  <label class="form__input-capture" for="name">Имя *</label>
+                  <input class="form__input" type="text" name="name">
+                </div>
+                <div class="form__input-item">
+                  <label class="form__input-capture" for="surname">Фамилия *</label>
+                  <input class="form__input" type="text" name="surname">
+                </div>
+                <div class="form__input-item">
+                  <label class="form__input-capture" for="email">Email *</label>
+                  <input class="form__input" type="email" name="email">
+                </div>
               </div>
-              <div class="samples__input-item">
-                <label class="samples__input-capture" for="surname">Фамилия *</label>
-                <input class="samples__input" type="text" name="surname">
-              </div>
-              <div class="samples__input-item">
-                <label class="samples__input-capture" for="email">Email *</label>
-                <input class="samples__input" type="email" name="email">
-              </div>
+              <a class="button button_type-form" href="#">Запросить</a>
             </form>
-          </section> -->
+          </section> 
         </main>
     
         <footer> </footer>

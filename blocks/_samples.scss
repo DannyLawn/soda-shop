@@ -1,3 +1,80 @@
-// .samples {
+.samples {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 60px 50px;
+  background-color: $selectionСolor;
 
-// }
+  &__description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: max-content;
+  }
+  
+  &__description-title {
+    margin: 0;
+    pointer-events: none;
+    font-size: 60px;
+    line-height: 65px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    max-width: max-content;
+    color: $highlightingText;
+
+    @include phones {
+      font-size: 26px;
+      line-height: 24px;
+      width: 100%;
+      max-width: 62%;
+      margin: 0 auto;
+    }
+
+    @include fixfontwth {
+      font-size: 20px;
+    }
+
+    @include fixmobilefontsz {
+      max-width: 94%;
+      margin: 0 auto;
+    }
+  }
+
+  &__description {
+    margin: 48px 0 0;
+    pointer-events: none;
+    width: 100%;
+    max-width: 457px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 0.3px;
+    color: $highlightingText;
+
+    @include phones {
+      margin: 20px auto 0;
+      font-size: 14px;
+      line-height: 19px; 
+      max-width: 62%;
+    }
+
+    @include fixmobilefontsz {
+      max-width: 94%;
+    }
+  }
+
+  @include flextestescontainer {
+    flex-direction: column;
+    gap: 100px;
+    padding: 34px;
+    margin: 0 50px;
+  }
+
+  @include phones {
+    padding: 20px;
+    gap: 50px;
+    margin: 0 20px;
+  }
+}

@@ -52,5 +52,11 @@
   }
 }
 
+@mixin borderbottominputfix {
+  @media screen and (max-width: $borderbottominputfix) {
+    @content;
+  }
+}
+
 
 

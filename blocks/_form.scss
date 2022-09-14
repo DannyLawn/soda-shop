@@ -1,0 +1,89 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 30px;
+  max-width: 693px;
+  height: 544px;
+  background-color: $formContainer;
+
+  &__title {
+    margin: 0;
+    pointer-events: none;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    color: #fff;
+
+    @include phones {
+      font-size: 26px;
+      line-height: 24px;
+    }
+
+    @include fixfontwth {
+      font-size: 20px;
+    }
+  }
+
+  &__input-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+  }
+
+  &__input-item:last-of-type {
+    width: 100%;
+  }
+
+  &__input-item {
+    width: max-content;
+    width: 310px;
+
+    @include borderbottominputfix {
+      width: 100% ;
+    }
+  }
+
+  &__input-capture {
+    display: block;
+    max-width: max-content;
+    font-size: 18px;
+    line-height: 31px;
+    letter-spacing: 0.3px;
+    color: #fff;
+
+    @include phones {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+
+  &__input {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #fff ;
+    height: 44px;
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 31px;
+    letter-spacing: 0.3px;
+    color: #fff;
+
+    @include phones {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+
+  @include flextestescontainer {
+    margin: 0 auto;
+  }
+}

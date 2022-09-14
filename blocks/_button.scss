@@ -43,6 +43,12 @@
         margin-left: 0;
       }
     }
+
+  &_type-form { 
+    margin-top: auto;
+    background-color: $buttonForm;
+    color: #fff;
+  }
 }
 
 .button:hover {
@@ -59,3 +65,18 @@
       }
     }
 }
+
+.button_type-form:hover {
+  animation-name: formborderlinehover;
+  animation-fill-mode: both;
+    
+  @keyframes formborderlinehover {
+    from {
+      border: 0px;
+      }
+      to {
+        border: 2px solid #E1FD2C;
+        border-radius: 10px;
+      }
+    }
+  }

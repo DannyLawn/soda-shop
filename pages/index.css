@@ -398,6 +398,7 @@
 }
 
 .content {
+  box-sizing: border-box;
   width: 100%;
   background-color: #fff;
 }
@@ -721,6 +722,7 @@
 .samples {
   position: relative;
   top: -95px;
+  box-sizing: border-box;
   margin-bottom: -95px;
   display: flex;
   flex-direction: row;
@@ -809,14 +811,14 @@
     flex-direction: column;
     gap: 100px;
     padding: 34px;
-    margin: 0 50px;
+    margin: 0 50px -95px;
   }
 }
 @media screen and (max-width: 767px) {
   .samples {
     padding: 20px;
     gap: 50px;
-    margin: 0 20px;
+    margin: 0 20px -95px;
   }
 }
 @media screen and (max-width: 445px) {

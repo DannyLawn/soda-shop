@@ -1,4 +1,7 @@
 .samples {
+  position: relative;
+  top: -95px;
+  margin-bottom: -95px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -12,6 +15,14 @@
     justify-content: center;
     margin: 0 auto;
     max-width: max-content;
+
+    @include tablets {
+      margin: 0 0 0 7.81%;
+    }
+
+    @include phones {
+      margin: 0 auto;
+    }
   }
   
   &__description-title {
@@ -76,5 +87,10 @@
     padding: 20px;
     gap: 50px;
     margin: 0 20px;
+  }
+
+  @include fixfontwth {
+    top: -2.5%;
+    margin-bottom: -2.5%;
   }
 }

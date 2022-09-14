@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SODA</title>
-    <link rel="stylesheet" href="./pages/style.css">
+    <link rel="stylesheet" href="./pages/index.css">
     <link rel="icon" href="./vendor/images/favicon.ico">
 </head>
 <body class="body">
     <div class="page">
-      <!--
         <header class="header">
             <h2 class="logo">soda</h2>
             <img class="header__print" src="./vendor/images/madeOnEarth.png" alt="Печать: сделано на планете земля.">
@@ -24,19 +23,16 @@
                     <a class="button" href="#">Подробнее</a>
                 </div>
             </div>
-        </header>
-        
+        </header>     
         <div class="outlet-line">
             <p class= "outlet-line__text">— Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh —
             </p>
         </div>
-      -->
         
         <main class="content">
-          <!--
           <section class="option">
             <h2 class="option__title">Как это работает?</h2>
-            <div class="option__item">
+            <div class="option__item" id="tastes">
               <div class="option__container">
                 <div class="option__text-container">
                   <h2 class="option__description-title">Вкусы</h2>
@@ -45,7 +41,7 @@
                 <img class= "option__image" src="./vendor/images/limonade-raspberry.png" alt="Бутылка клубничного лимонада, окруженная ягодой и брызгами воды.">
               </div>
             </div>
-            <div class="option__item option__item_type-structure">
+            <div class="option__item option__item_type-structure" id="structure">
               <div class="option__container option__container_type-structure">
                 <div class="option__text-container">
                   <h2 class="option__description-title">Состав</h2>
@@ -83,8 +79,7 @@
               </div>
             </div>
           </section>
-          -->
-          <section class="samples">
+          <section class="samples" id="samples">
             <div class="samples__description-container">
               <h2 class="samples__description-title">Семплы</h2>
               <p class="samples__description">Хотите получить семплы каждого вкуса, чтобы&nbsp;понять что нравится вам? Заполните форму!</p>
@@ -109,8 +104,24 @@
             </form>
           </section> 
         </main>
-    
-        <footer> </footer>
+        <footer class="footer">
+          <img class="footer__logo" src="./vendor/images/logoFooter.png" alt="Логотип SODA, находящийся в окружностях.">
+          <div class="footer__menu-container">
+            <ul class="footer__menu-item">
+              <h2 class="footer__menu-title">Меню</h2>
+              <li class="footer__menu-list"><a class="footer__menu-link" href="#tastes" data-attribute-anchor="tastes">Вкусы</a></li>
+              <li class="footer__menu-list"><a class="footer__menu-link" href="#structure" data-attribute-anchor="structure">Составы</a></li>
+              <li class="footer__menu-list"><a class="footer__menu-link" href="#samples" data-attribute-anchor="samples">Семплы</a></li>
+            </ul>
+            <ul class="footer__menu-item">
+              <h2 class="footer__menu-title">Контакты</h2>
+              <li class="footer__menu-list"><a class="footer__menu-link" href="mailto:press@soda.io">press@soda.io</a></li>
+              <li class="footer__menu-list"><a class="footer__menu-link" href="mailto:connect@soda.io">connect@soda.io</a></li>
+            </ul>
+            <p class="footer__capture">© 2022 Soda, Inc. All Rights Reserved.</p>
+          </div>
+        </footer>
     </div>
+    <script src="./pages/index.js" type="module"></script>
 </body>
 </html>

@@ -1,0 +1,114 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 100px 150px;
+  background-color: $footerColor;
+  width: 100%;
+  color: #fff;
+
+  &__logo {
+    margin-right: 17.15%;
+    width: 300px;
+    height: 300px;
+
+    @include tablets {
+      width: 200px;
+      height: 200px;
+      margin-right: 100px;
+    }
+
+    @include phones {
+      margin-right: 0;
+    }
+  }
+
+  &__menu-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 340px;
+
+    @include tablets {
+      justify-content: space-around;
+    }
+
+    @include phones {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+    }
+  }
+
+  &__menu-item {
+    margin: 0;
+    padding: 0;
+    max-width: max-content;
+    max-height: max-content;
+  }
+
+  &__menu-title {
+    pointer-events: none;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 33px;
+    margin: 0 0 20px 0;
+
+    @include phones {
+      text-align: center;
+    }
+  }
+
+  &__menu-list {
+    list-style-type: none;
+    margin: 0 0 3px 0;
+    cursor: pointer;
+
+    @include phones {
+      text-align: center;
+    }
+  }
+
+  &__menu-list:last-of-type {
+    margin: 0;
+  }
+
+  &__menu-list:hover {
+    opacity: 0.7;
+  }
+
+  &__menu-link {
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: 0.3px;
+    color: inherit;
+  }
+
+  &__capture {
+    margin: 150px 0 0 0;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 0.3px;
+
+    @include phones {
+      margin-top: 0px;
+    }
+  }
+
+  @include laptop {
+    padding: 120px 0 50px;
+  }
+
+  @include tablets {
+    justify-content: center;
+  }
+
+  @include phones {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 60px 20px 20px 20px;
+  }
+}

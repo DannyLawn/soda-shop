@@ -3,16 +3,26 @@
   flex-direction: column;
   box-sizing: border-box;
   padding: 30px;
-  min-width: 693px;
+  max-width: 693px;
   height: 544px;
   background-color: $formContainer;
 
   &__title {
     margin: 0;
     pointer-events: none;
+    font-weight: 500;
     font-size: 32px;
     line-height: 40px;
     color: #fff;
+
+    @include phones {
+      font-size: 26px;
+      line-height: 24px;
+    }
+
+    @include fixfontwth {
+      font-size: 20px;
+    }
   }
 
   &__input-container {
@@ -29,6 +39,10 @@
   &__input-item {
     width: max-content;
     width: 310px;
+
+    @include borderbottominputfix {
+      width: 100% ;
+    }
   }
 
   &__input-capture {
@@ -38,6 +52,12 @@
     line-height: 31px;
     letter-spacing: 0.3px;
     color: #fff;
+
+    @include phones {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 19px;
+    }
   }
 
   &__input {
@@ -56,5 +76,14 @@
     line-height: 31px;
     letter-spacing: 0.3px;
     color: #fff;
+
+    @include phones {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+
+  @include flextestescontainer {
+    margin: 0 auto;
   }
 }

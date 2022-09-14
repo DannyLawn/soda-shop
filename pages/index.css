@@ -918,4 +918,124 @@
   .form {
     margin: 0 auto;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 100px 150px;
+  background-color: #7A54F9;
+  width: 100%;
+  color: #fff;
+}
+.footer__logo {
+  margin-right: 17.15%;
+  width: 300px;
+  height: 300px;
+}
+@media screen and (max-width: 992px) {
+  .footer__logo {
+    width: 200px;
+    height: 200px;
+    margin-right: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__logo {
+    margin-right: 0;
+  }
+}
+.footer__menu-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 340px;
+}
+@media screen and (max-width: 992px) {
+  .footer__menu-container {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__menu-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
+.footer__menu-item {
+  margin: 0;
+  padding: 0;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+}
+.footer__menu-title {
+  pointer-events: none;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 33px;
+  margin: 0 0 20px 0;
+}
+@media screen and (max-width: 767px) {
+  .footer__menu-title {
+    text-align: center;
+  }
+}
+.footer__menu-list {
+  list-style-type: none;
+  margin: 0 0 3px 0;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .footer__menu-list {
+    text-align: center;
+  }
+}
+.footer__menu-list:last-of-type {
+  margin: 0;
+}
+.footer__menu-list:hover {
+  opacity: 0.7;
+}
+.footer__menu-link {
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: 0.3px;
+  color: inherit;
+}
+.footer__capture {
+  margin: 150px 0 0 0;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 0.3px;
+}
+@media screen and (max-width: 767px) {
+  .footer__capture {
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .footer {
+    padding: 120px 0 50px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .footer {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 60px 20px 20px 20px;
+  }
+}/*# sourceMappingURL=index.css.map */

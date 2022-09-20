@@ -6,18 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Daniil Nikitin">
   <title>SODA</title>
-  <link rel="stylesheet" href="./pages/index.css">
-  <link rel="shortcut icon" href="./vendor/images/favicon.ico">
+  <link rel="shortcut icon" href="<%=require('./vendor/images/favicon.ico')%>">
 </head>
 <body class="body">
     <div class="page">
         <header class="header">
             <h2 class="logo">soda</h2>
-            <img class="header__print" src="./vendor/images/madeOnEarth.png" alt="Печать: сделано на планете земля.">
+            <img class="header__print" src="<%=require('./vendor/images/madeOnEarth.png')%>" alt="Печать: сделано на планете земля.">
             <div class="header__circle"></div>
             <div class="header__container">
                 <div class="header__image">
-                    <img class="header__tasteIcon" src="./vendor/images/pinaple.png" alt="Фигура с надписью Ананас.">
+                    <img class="header__tasteIcon" src="<%=require('./vendor/images/pinaple.png')%>" alt="Фигура с надписью Ананас.">
                 </div>
                 <div class="header__description-container">
                     <h1 class="header__title">Вкусные лимонады из&nbsp;фруктов</h1>
@@ -39,7 +38,7 @@
                   <h2 class="option__description-title">Вкусы</h2>
                   <p class="option__description">Пейте фрукты, а не газировку со вкусовыми&nbsp;добавками, наши лимонады на&nbsp;100% натуральны!</p>
                 </div>
-                <img class= "option__image" src="./vendor/images/limonade-raspberry.png" alt="Бутылка клубничного лимонада, окруженная ягодой и брызгами воды.">
+                <img class= "option__image" src="<%=require('./vendor/images/limonade-raspberry.png')%>" alt="Бутылка клубничного лимонада, окруженная ягодой и брызгами воды.">
               </div>
             </div>
             <div class="option__item option__item_type-structure" id="structure">
@@ -76,7 +75,7 @@
             <h2 class="banner__title">SODA — натуральные лимонады!</h2>
             <div class="banner__image-container">
               <div class="banner__image">
-                <img class="banner__tasteIcon" src="./vendor/images/mango.png" alt="Фигура с надписью Манго.">
+                <img class="banner__tasteIcon" src="<%=require('./vendor/images/mango.png')%>" alt="Фигура с надписью Манго.">
               </div>
             </div>
           </section>
@@ -106,7 +105,7 @@
           </section> 
         </main>
         <footer class="footer">
-          <img class="footer__logo" src="./vendor/images/logoFooter.png" alt="Логотип SODA, находящийся в окружностях.">
+          <img class="footer__logo" src="<%=require('./vendor/images/logoFooter.png')%>" alt="Логотип SODA, находящийся в окружностях.">
           <div class="footer__menu-container">
             <ul class="footer__menu-item">
               <h2 class="footer__menu-title">Меню</h2>

@@ -1,3 +1,4 @@
+import "../pages/index.scss";
 import { scrollToAnchor } from "../utils.js/anchorLinkScroll.js";
 
 document

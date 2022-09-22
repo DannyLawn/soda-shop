@@ -1,5 +1,5 @@
 import "../pages/index.scss";
-import { scrollToAnchor } from "../utils.js/anchorLinkScroll.js";
+import { scrollToAnchor } from "../utils/anchorLinkScroll.js";
 
 document
 	.querySelectorAll("[data-attribute-anchor]")

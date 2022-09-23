@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,7 @@
                 </div>
                 <div class="header__description-container">
                     <h1 class="header__title">Вкусные лимонады из&nbsp;фруктов</h1>
-                    <a class="button" href="#">Подробнее</a>
+                    <button type="button" class="button">Подробнее</button>
                 </div>
             </div>
         </header>     
@@ -67,7 +67,7 @@
                 </ul>
               </div>
               <div class="option__button-container">
-                <a class="button button_type-test" href="#">Попробовать</a>
+                <button type="button" class="button button_type-test">Попробовать</button>
               </div>
             </div>
           </section>
@@ -89,18 +89,18 @@
               <div class="form__input-container">
                 <div class="form__input-item">
                   <label class="form__input-capture" for="name">Имя *</label>
-                  <input class="form__input" type="text" name="name">
+                  <input class="form__input" type="text" id="name" required>
                 </div>
                 <div class="form__input-item">
                   <label class="form__input-capture" for="surname">Фамилия *</label>
-                  <input class="form__input" type="text" name="surname">
+                  <input class="form__input" type="text" id="surname" required>
                 </div>
                 <div class="form__input-item">
                   <label class="form__input-capture" for="email">Email *</label>
-                  <input class="form__input" type="email" name="email">
+                  <input class="form__input" type="email" id="email" required>
                 </div>
               </div>
-              <a class="button button_type-form" href="#">Запросить</a>
+              <button type="submit" class="button button_type-form">Запросить</button>
             </form>
           </section> 
         </main>
@@ -108,13 +108,13 @@
           <img class="footer__logo" src="<%=require('./vendor/images/logoFooter.png')%>" alt="Логотип SODA, находящийся в окружностях.">
           <div class="footer__menu-container">
             <ul class="footer__menu-item">
-              <h2 class="footer__menu-title">Меню</h2>
+              <li class="footer__menu-title">Меню</li>
               <li class="footer__menu-list"><a class="footer__menu-link" href="#tastes" data-attribute-anchor="tastes">Вкусы</a></li>
               <li class="footer__menu-list"><a class="footer__menu-link" href="#structure" data-attribute-anchor="structure">Составы</a></li>
               <li class="footer__menu-list"><a class="footer__menu-link" href="#samples" data-attribute-anchor="samples">Семплы</a></li>
             </ul>
             <ul class="footer__menu-item">
-              <h2 class="footer__menu-title">Контакты</h2>
+              <li class="footer__menu-title">Контакты</li>
               <li class="footer__menu-list"><a class="footer__menu-link" href="mailto:press@soda.io">press@soda.io</a></li>
               <li class="footer__menu-list"><a class="footer__menu-link" href="mailto:connect@soda.io">connect@soda.io</a></li>
             </ul>
@@ -122,6 +122,5 @@
           </div>
         </footer>
     </div>
-    <script src="./pages/index.js" type="module"></script>
 </body>
 </html>
